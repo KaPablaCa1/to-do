@@ -19,7 +19,6 @@ function loadTasks() {
     try {
       return JSON.parse(savedTasks);
     } catch (error) {
-      // Если сохранённые данные повреждены, используем начальный список.
       return items;
     }
   }
